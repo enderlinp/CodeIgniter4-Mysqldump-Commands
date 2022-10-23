@@ -66,7 +66,7 @@ or:
 ```php
 <?php
 // Database `ci4` successfully backup.
-$message = command('db:mysqldump -c');
+$message = command('db:mysqldump --c');
 
 return redirect()->back()->with('message', $message);
 ```
