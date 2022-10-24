@@ -127,9 +127,9 @@ class Mysqldump extends BaseCommand
         	
         	$directory = WRITEPATH . 'sql/';
         	
-        	// Check if `sql` directory exists, create it otherwise
+        	// Check if the `sql` directory exists, otherwise create it
         	if (! is_dir($directory)) {
-        		if (CLI::prompt('The `sql` directory does not exists. Create it?', ['y', 'n']) === 'y') {
+        		if (CLI::prompt('The `sql` directory does not exist. Create it?', ['y', 'n']) === 'y') {
     				mkdir($directory, 0755, true);
     				
     				CLI::newLine();
