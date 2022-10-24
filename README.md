@@ -17,7 +17,7 @@ Install [ifsnop/mysqldump-php](https://www.github.com/ifsnop/mysqldump-php) libr
 ## Usage
 
 Perform a backup of your MySQL default database (**MySQLi driver only**) and store the backup file within your "{WRITEPATH}/sql" directory. 
-Prompt the user to create it if it does not exists. 
+Prompt the user to create it if it does not exist. 
 
 The backup file name format is `dbname_Ymd_His.sql` or `dbname_Ymd_His.sql.gz` with Gzip compression enabled (see below).
 
